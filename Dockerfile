@@ -10,4 +10,4 @@ RUN apt-get update && apt-get install -y mongodb-org
 RUN mkdir -p /data/db
 
 EXPOSE 27017
-
+ENTRYPOINT ["/usr/bin/mongod"]
